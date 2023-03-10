@@ -3,23 +3,43 @@
         <div class="q-pa-md">
             <q-card class="my-card">
                 <q-card-section>
-                    <q-select style="max-width: 160px;" outlined v-model="teraType" :options="typeList" stack-label label="テラスタルタイプ" />
+                    <q-select style="max-width: 200px;" outlined v-model="teraType" :options="typeList" stack-label label="テラスタルタイプ">
+                        <template v-if="teraType" v-slot:append>
+                            <q-icon name="cancel" @click.stop.prevent="teraType = ''" class="cursor-pointer" />
+                        </template>
+                    </q-select>
                 </q-card-section>
                 <q-card-section>
-                    <q-input style="max-width: 180px;" outlined stack-label label="ポケモン絞り込み" v-model="teraNameFilter" />
-                    <q-select style="max-width: 180px;" outlined v-model="teraName" :options="showNameList" stack-label label="ポケモン名">
+                    <q-input style="max-width: 200px;" outlined stack-label label="ポケモン絞り込み" v-model="teraNameFilter" />
+                    <q-select style="max-width: 200px;" outlined v-model="teraName" :options="showNameList" stack-label label="ポケモン名">
                         <template v-if="teraName" v-slot:append>
                             <q-icon name="cancel" @click.stop.prevent="teraName = ''" class="cursor-pointer" />
                         </template>
                     </q-select>
                 </q-card-section>
                 <q-card-section>
-                    <q-select style="max-width: 160px;" outlined v-model="baseType1" :options="typeList" stack-label label="通常タイプ１" />
-                    <q-select style="max-width: 160px;" outlined v-model="baseType2" :options="typeList" stack-label label="通常タイプ２" />
+                    <q-select style="max-width: 160px;" outlined v-model="baseType1" :options="typeList" stack-label label="通常タイプ１">
+                        <template v-if="baseType1" v-slot:append>
+                            <q-icon name="cancel" @click.stop.prevent="baseType1 = ''" class="cursor-pointer" />
+                        </template>
+                    </q-select>
+                    <q-select style="max-width: 160px;" outlined v-model="baseType2" :options="typeList" stack-label label="通常タイプ２">
+                        <template v-if="baseType2" v-slot:append>
+                            <q-icon name="cancel" @click.stop.prevent="baseType2 = ''" class="cursor-pointer" />
+                        </template>
+                    </q-select>
                 </q-card-section>
                 <q-card-section>
-                    <q-select style="max-width: 160px;" outlined v-model="subType1" :options="typeList" stack-label label="サブ技タイプ１" />
-                    <q-select style="max-width: 160px;" outlined v-model="subType2" :options="typeList" stack-label label="サブ技タイプ２" />
+                    <q-select style="max-width: 160px;" outlined v-model="subType1" :options="typeList" stack-label label="サブ技タイプ１">
+                        <template v-if="subType1" v-slot:append>
+                            <q-icon name="cancel" @click.stop.prevent="subType1 = ''" class="cursor-pointer" />
+                        </template>
+                    </q-select>
+                    <q-select style="max-width: 160px;" outlined v-model="subType2" :options="typeList" stack-label label="サブ技タイプ２">
+                        <template v-if="subType2" v-slot:append>
+                            <q-icon name="cancel" @click.stop.prevent="subType2 = ''" class="cursor-pointer" />
+                        </template>
+                    </q-select>
                 </q-card-section>
             </q-card>
             <q-card class="my-card">

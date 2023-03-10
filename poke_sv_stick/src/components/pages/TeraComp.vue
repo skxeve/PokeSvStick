@@ -23,9 +23,20 @@
                 </q-card-section>
             </q-card>
             <q-card class="my-card">
+                <q-card-section v-if="goodTypes.length > 0">
+                    <div class="text-subtitle1">推奨タイプ</div>
+                    <q-list style="max-width: 600px;">
+                        <q-item v-for="type in goodTypes">
+                            <q-item-section :class="'bg-'+type.color">
+                                <q-item-label>{{ type.name }}</q-item-label>
+                                <q-item-label caption>{{ getGoodDesc(type.name) }}</q-item-label>
+                            </q-item-section>
+                        </q-item>
+                    </q-list>
+                </q-card-section>
                 <q-card-section v-if="goodPokes.length > 0">
                     <div class="text-subtitle1">推奨ポケモン({{ goodPokes.length }})</div>
-                    <div class="text-caption">個体値や進化段階のデータが手元にないため、タイプ相性のみ考慮しています。</div>
+                    <div class="text-caption">タイプ相性のみ考慮しています。特性、進化段階、種族値などは考慮できていません。</div>
                     <q-scroll-area style="height: 200px; max-width: 300px;">
                         <q-list bordered separator>
                             <q-item v-for="poke in goodPokes" :class="'bg-'+poke_types.find(v => v.name == poke.type1)?.color">
@@ -38,18 +49,7 @@
                         </q-list>
                     </q-scroll-area>
                 </q-card-section>
-                <q-card-section>
-                    <div class="text-subtitle1">推奨タイプ</div>
-                    <q-list style="max-width: 600px;">
-                        <q-item v-for="type in goodTypes">
-                            <q-item-section :class="'bg-'+type.color">
-                                <q-item-label>{{ type.name }}</q-item-label>
-                                <q-item-label caption>{{ getGoodDesc(type.name) }}</q-item-label>
-                            </q-item-section>
-                        </q-item>
-                    </q-list>
-                </q-card-section>
-                <q-card-section>
+                <q-card-section v-if="guardTypes.length > 0">
                     <div class="text-subtitle1">耐久できるタイプ</div>
                     <q-list style="max-width: 120px;">
                         <q-item v-for="type in guardTypes">
@@ -57,8 +57,8 @@
                         </q-item>
                     </q-list>
                 </q-card-section>
-                <q-card-section>
-                    <div class="text-subtitle1">弱点を付けるタイプ</div>
+                <q-card-section v-if="effectiveTypes.length > 0">
+                    <div class="text-subtitle1">弱点を突けるタイプ</div>
                     <q-list style="max-width: 120px;">
                         <q-item v-for="type in effectiveTypes">
                             <q-item-section :class="'bg-'+type.color">{{ type.name }}</q-item-section>

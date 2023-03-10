@@ -156,15 +156,18 @@ const goodPokes = computed(() => {
             return false
         }
         // 防御判定
+        let defFlag = false
         for (const key in attackTypes.value) {
             const attackType = attackTypes.value[key]
             // @ts-ignore
             if (poke_noeffect[dex.type1].includes(attackType)) {
-                return true
+                defFlag = true
+                continue
             }
             // @ts-ignore
             if (dex.type2 != '' && poke_noeffect[dex.type2].includes(attackType)) {
-                return true
+                defFlag = true
+                continue
             }
             let rate: number = 1.0
             // @ts-ignore
@@ -183,11 +186,15 @@ const goodPokes = computed(() => {
             if (dex.type2 != '' && poke_weak[dex.type2].includes(attackType)) {
                 rate *= 2
             }
+            // 1種類
+            if (rate > 1.0) {
+                return false
+            }
             if (rate < 1.0) {
-                return true
+                defFlag = true
             }
         }
-        return false
+        return defFlag
     }))
 })
 const getGoodDesc = (typeName: string): string => {

@@ -1,0 +1,20 @@
+[
+    {"name": "ノーマル", "short": "ノ", "color": "grey-2"},
+    {"name": "ほのお", "short": "火", "color": "deep-orange-3"},
+    {"name": "みず", "short": "水", "color": "blue-3"},
+    {"name": "でんき", "short": "電", "color": "yellow-12"},
+    {"name": "くさ", "short": "草", "color": "light-green-13"},
+    {"name": "こおり", "short": "氷", "color": "cyan-12"},
+    {"name": "かくとう", "short": "格", "color": "deep-orange-14"},
+    {"name": "どく", "short": "毒", "color": "deep-purple-12"},
+    {"name": "じめん", "short": "地", "color": "brown-13"},
+    {"name": "ひこう", "short": "飛", "color": "light-blue-11"},
+    {"name": "エスパー", "short": "超", "color": "purple-12"},
+    {"name": "むし", "short": "虫", "color": "green-12"},
+    {"name": "いわ", "short": "岩", "color": "amber-3"},
+    {"name": "ゴースト", "short": "霊", "color": "purple-4"},
+    {"name": "ドラゴン", "short": "竜", "color": "orange-14"},
+    {"name": "あく", "short": "悪", "color": "indigo-4"},
+    {"name": "はがね", "short": "鋼", "color": "blue-grey-5"},
+    {"name": "フェアリー", "short": "妖", "color": "pink-12"}
+]

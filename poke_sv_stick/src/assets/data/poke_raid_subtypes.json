@@ -1,10 +1,362 @@
 [
     {
+        "name": "ピチュー",
+        "types": ["はがね"],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "ピカチュウ",
+        "types": ["はがね"],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "ライチュウ",
+        "types": ["はがね"],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "パモット",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "パーモット",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "カイデン",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "タイカイデン",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "サンダース",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "パチリス",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "バチンウニ",
+        "types": [],
+        "noeffect": ["でんき"]
+    },
+    {
+        "name": "ゴース",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "ゴースト",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "ムウマ",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "ムウマージ",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "ドータクン",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "ロトム",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "シビシラス",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "シビビール",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "シビルドン",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "フリージオ",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "サザンドラ",
+        "types": [],
+        "noeffect": ["じめん"]
+    },
+    {
+        "name": "エーフィ",
+        "types": [],
+        "hasBurst": true
+    },
+    {
+        "name": "グレイシア",
+        "types": [],
+        "hasBurst": true
+    },
+    {
+        "name": "シャワーズ",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "シキジカ",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "メブキジカ",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "キリンリキ",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "リキキリン",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "オドシシ",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "メェークル",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "ゴーゴート",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "ヌメラ",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
+        "name": "ヌメイル",
+        "types": [],
+        "noeffect": ["くさ"]
+    },
+    {
         "name": "ヌメルゴン",
-        "types": ["みず", "くさ"]
+        "types": ["みず", "くさ"],
+        "noeffect": ["くさ"]
     },
     {
         "name": "ミミッキュ",
         "types": ["くさ"]
+    },
+    {
+        "name": "ウパー",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ドオー",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ヌオー",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "サボネア",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ノクタス",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "カラナクシ",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "トリトドン",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ケイコウオ",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ネオラント",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "シャリタツ",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "グレッグル",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ドクロッグ",
+        "types": [],
+        "noeffect": "みず"
+    },
+    {
+        "name": "ヤルキモノ",
+        "types": ["ゴースト"]
+    },
+    {
+        "name": "グルトン",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "パフュートン",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "ルリリ",
+        "types": [],
+        "noeffect": ["くさ"],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "マリル",
+        "types": [],
+        "noeffect": ["くさ"],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "マリルリ",
+        "types": [],
+        "noeffect": ["くさ"],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "タルップル",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "バネブー",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "ブーピッグ",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "マクノシタ",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "ハリテヤマ",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "アルクジラ",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "ハルクジラ",
+        "types": [],
+        "strong": ["ほのお", "こおり"]
+    },
+    {
+        "name": "デルビル",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "ヘルガー",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "タンドン",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "トロッゴン",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "セキタンザン",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "カルボウ",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "グレンアルマ",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "ソウブレイズ",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "ブースター",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "ガーディ",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "ウィンディ",
+        "types": [],
+        "noeffect": ["ほのお"]
+    },
+    {
+        "name": "キョジオーン",
+        "types": ["かくとう"]
     }
 ]
